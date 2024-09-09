@@ -1,0 +1,15 @@
+.quote .quotecontainer {
+    border-radius: 15px;
+    border: 1px solid #000;
+    height: 70px;
+    width: 375px;
+    background-color:grey;
+    margin: 60px;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .text {
+    overflow-wrap: normal;
+    width: 800px;
+  }
