@@ -1,0 +1,28 @@
+a {
+    color: aqua;
+  }
+body {
+    color: #d4d2d2;
+    background: #D0E4F5 url("vanisle.png") no-repeat fixed 100% 100%;
+  }
+
+
+  footer {
+    clear: both;
+  }
+
+  #legend {
+    padding: 10px 15px;
+    float: left;
+
+  }
+
+
+
+  #details section {
+    background: #46463b;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    overflow: auto;
+  }

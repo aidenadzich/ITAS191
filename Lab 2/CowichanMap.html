@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Favourite places in Nanaimo - Aiden Adzich</title>
+    <title>Favourite places in Cowichan - Aiden Adzich</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <style>
 
       html {
@@ -13,65 +14,112 @@
         box-sizing: inherit;
       }
 
+      #cowichanmap {
+    float: left;
+    position: relative;
+    margin-bottom: 100px;
+    border: 10px groove #D0E4F5;
+  }
 
-      body {
-        color: #111;
-      }
+  #cowichanmap a {
+      display: block;
+      border: 2px solid #333;
+      position: absolute;
+    }
 
-      #map {
-        float: left;
-        height: 900px;
-      }
+    #cowichanmap a:hover {
+      border: 2px solid #FF2;
+    }
 
-      footer {
-        clear: both;
-      }
+    a#mapa {width: 15px; height: 15px; left:664px; top:241px;}
+    a#mapb {width: 15px; height: 15px; left:624px; top:247px;}
+    a#mapc {width: 17px; height: 17px; left:818px; top:345px;}
+    a#mapd {width: 18px; height: 18px; left:645px; top:173px;}
+    a#mape {width: 20px; height: 20px; left:557px; top:95px;}
+    a#mapf {width: 20px; height: 20px; left:228px; top:234px;}
 
-      #legend {
-        padding: 10px 15px;
-        float: left;
-      }
-
-      #details section {
-        background: #ccccad;
-        margin-bottom: 20px;
-        padding: 10px 15px;
-        border-radius: 5px;
-        overflow: auto;
-      }
     </style>
   </head>
   <body>
     <header>
-      <h1>Aiden's favourite places in Nanaimo</h1>
-      <h3>Click here for Nanaimo</h3>
+      <h1>Aiden's favourite places in Cowichan</h1>
+      <h3><a href="ITAS191_Lab2_NanaimoMap_Aiden.Adzich.html">Click here for Nanaimo</a></h3>
     </header>
 
     <main>
-      <div id="map">
-        <img src="cowichan-map.png" alt="Map of Nanaimo, BC" width="1687" height="820" />
+      <div id="cowichanmap">
+        <img src="cowichan-map.png" alt="Map of Cowichan, BC" width="844" height="410">
+        <a href="https://duncan.ca/visitors/shopping/" id="mapa"></a>
+        <a href="https://bcparks.ca/cowichan-river-park/" id="mapb"></a>
+        <a href="https://www.cowichanbay.com/" id="mapc"></a>
+        <a href="https://bcforestdiscoverycentre.com/" id="mapd"></a>
+        <a href="https://www.alltrails.com/poi/canada/british-columbia/mount-prevost" id="mape"></a>
+        <a href="https://www.alltrails.com/trail/canada/british-columbia/skutz-falls-hike" id="mapf"></a>
       </div>
 
       <div id="legend">
         <h2>Legend</h2>
         <ol type="A">
-          <li><a href="#nanaimo_museum">Nanaimo Museum</a></li>
-          <li><a href="#departure_bay"> Departure Bay Ferry</a></li>
+          <li><a href="#duncan">Downtown Duncan</a></li>
+          <li><a href="#paradise">Paradise</a></li>
+          <li><a href="#cowbay">Cowichan Bay</a></li>
+          <li><a href="#trains">BC Forest Discovery Centre</a></li>
+          <li><a href="#prevost">Mount Prevost</a></li>
+          <li><a href="#skutz">Skutz Falls</a></li>
+          
         </ol>
       </div>
     </main>
     <footer>
       <div id="details">
-        <h2>Details about Places</h2>
+        <h2>Details</h2>
         <section>
-          <h3 id="nanaimo_museum">Nanaimo Museum</h3>
-          <p>I used to go to the Nanaimo Museum quite frequently when I was younger, as it was a popular place for my homeschooling group to go on field trips.
-            I haven't been in many years, but I clearly remember walking through the mine recreation and thinking it was the coolest thing ever.
+          <h3 id="duncan">Downtown Duncan</h3>
+          <p>The downtown core of Duncan is one of my favourite places on The Island. 
+            I've lived in Duncan for most of my life, and it's always been a place to go socialize, attend community events, or even just walk around if you're bored. <br> Some highlights include:</p>
+            <ul>
+              <li>The Clock Tower</li>
+              <li>The Farmers Market</li>
+              <li>The Community Stage</li>
+              <li>The Red Balloon Toyshop</li>
+              <li>The Arbutus Cafe</li>
+              <li>...and many more!</li>
+            </ul>
+        </section>
+        <section>
+          <h3 id="paradise">Paradise</h3>
+          <p>Paradise has been a very popular swimming location on the Cowichan River for 40+ years. 
+            It features large cliffs to jump from, and has both shallow and deep areas so it is perfect for people of all skill levels of swimming.
+            In the past few years, someone bought the property the trails are on, cutting off access to the location; However, it did not take long for people to find a way through to the river.</p>
+        </section>
+        <section>
+          <h3 id="cowbay">Cowichan Bay</h3>
+          <p>Cowichan Bay, commonly known as simply "Cow Bay" by the locals, is a small community on the coast of The Island near Duncan. 
+            It is filled with small shops, resturaunts, resorts, and a maritime museum. 
+            Cow Bay features a large marina where people store their boats. You will also occasionally see large ships parked out in the bay.</p>
+        </section>
+        <section>
+          <h3 id="trains">BC Forest Discovery Centre</h3>
+          <p>The Forest Discovery Centre, also known as "The Train Museum", is a core of the community in the Cowichan Valley. 
+            Every year they host events for the community such as the Halloween Train, Christmas Train, Maple Syrup Festival, and many many more. <br>
+            Some features include:</p>
+            <ul>
+              <li>A museum on logging on Vancouver Island</li>
+              <li>Multiple full size steam trains</li>
+              <li>Many old logging vehicles</li>
+              <li>A narrow gauge train to ride around the property, both a steam and a diesel</li>
+              <li>Buildings preserved from the old communities in the Cowichan Valley, including the original Somenos School.</li>
+            </ul>
+        </section>
+        <section>
+          <h3 id="prevost">Mountain Prevost</h3>
+          <p>Prevost is one of the mountains that towers over Duncan. It's a large mountain that is used for hiking, mountain biking, quadding, and logging.
+             The top of the mountain features two peaks. The first is accessible by car and is a popular location for paragliders and star gazers. The second is a semi-difficult hike that leads to a war memorial and an amazing view of the Cowichan Valley.
           </p>
         </section>
         <section>
-          <h3 id="departure_bay">Add Another Place Here</h3>
-          <p>This is where you can fill in the description</p>
+          <h3 id="skutz">Skutz Falls</h3>
+          <p>Skutz Falls in another very popular swimming location on the Cowichan River. It features small pools that are great for relaxing, and a faster and deeper area that is perfect for stronger swimmers. If you head down the river, you'll eventually reach the falls. They are quite dangerous as the river is very fast and it is not recommended to swim there.</p>
         </section>
       </div>
     </footer>

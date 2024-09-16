@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Favourite places in Nanaimo - Aiden Adzich</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <style>
-
+      
       html {
         box-sizing: border-box;
       }
@@ -13,50 +14,60 @@
         box-sizing: inherit;
       }
 
-
-      body {
-        color: #111;
-      }
-
-      #map {
+      #nanaimomap {
         float: left;
-        height: 900px;
-      }
+        margin-bottom: 100px;
+        border: 10px groove #D0E4F5;
+        position:relative;
+        /*
+        background-image: url(nanaimo-map.png);
+        width: 704;
+        height: 768; */
+  }
+    #nanaimomap a {
+      display: block;
+      border: 2px solid #333;
+      position: absolute;
+    }
 
-      footer {
-        clear: both;
-      }
+    #nanaimomap a:hover {
+      border: 2px solid #FF2;
+    }
 
-      #legend {
-        padding: 10px 15px;
-        float: left;
-      }
+    a#mapa {width: 20px; height: 20px; left:481px; top:369px;}
+    a#mapb {width: 20px; height: 20px; left:440px; top:270px;}
+    a#mapc {width: 20px; height: 20px; left:501px; top:369px;}
+    a#mapd {width: 20px; height: 20px; left:191px; top:98px;}
+    a#mape {width: 20px; height: 20px; left:290px; top:218px;}
 
-      #details section {
-        background: #ccccad;
-        margin-bottom: 20px;
-        padding: 10px 15px;
-        border-radius: 5px;
-        overflow: auto;
-      }
     </style>
   </head>
   <body>
     <header>
       <h1>Aiden's favourite places in Nanaimo</h1>
       <h3><a href="CowichanMap.html">Click here for Cowichan</a></h3>
+      
     </header>
 
     <main>
-      <div id="map">
-        <img src="nanaimo-map.png" alt="Map of Nanaimo, BC" width="768" height="704" />
+
+      <div id="nanaimomap">
+        <img src="nanaimo-map.png" alt="Map of Nanaimo, BC" width="768" height="704">
+        <a href="https://nanaimomuseum.ca/" id="mapa"></a>
+        <a href="https://www.bcferries.com/current-conditions/NAN-HSB" id="mapb"></a>
+        <a href="https://nanaimomuseum.ca/exhibits-collections/the-bastion/" id="mapc"></a>
+        <a href="https://www.woodgrovecentre.com/" id="mapd"></a>
+        <a href="https://en.wikipedia.org/wiki/Island_Highway" id="mape"></a>
       </div>
 
-      <div id="legend">
+      <div id="legend" >
         <h2>Legend</h2>
-        <ol type="A">
+        <ol type="A" >
           <li><a href="#nanaimo_museum">Nanaimo Museum</a></li>
           <li><a href="#departure_bay"> Departure Bay Ferry</a></li>
+          <li><a href="#bastion">The Bastion</a></li>
+          <li><a href="#woodgrove">Woodgrove Mall</a></li>
+          <li><a href="#highway">Island Highway</a></li>
         </ol>
       </div>
     </main>
@@ -70,8 +81,21 @@
           </p>
         </section>
         <section>
-          <h3 id="departure_bay">Add Another Place Here</h3>
-          <p>This is where you can fill in the description</p>
+          <h3 id="departure_bay">Departure Bay Ferry</h3>
+          <p>I love taking the ferry to Vancouver, and the most common place I leave from is Departure Bay.
+             I often leave early in the morning, and return late at night, so I get to watch the sunrise and sunset from the ferry.</p>
+        </section>
+        <section>
+          <h3 id="bastion">The Bastion</h3>
+          <p>A small tower next to the museum built by The Hudson's Bay Company in 1853 to defend the coal operations in Nanaimo.</p>
+        </section>
+        <section>
+          <h3 id="woodgrove">Woodgrove Mall</h3>
+          <p>Woodgrove is in my opinion, the best mall on Vancouver Island. It's filled with a mix of of small stores and large brands, and it very rarely has empty spaces. I've spent so much time walking around the mall with my sister, and she constantly wants me to drive her to Nanaimo so we can go.</p>
+        </section>
+        <section>
+          <h3 id="highway">Island Highway</h3>
+          <p>The old areas of the highway leading up The Island are among my favourite roads to drive, from Duncan to Courtenay, and the Island Highway going through Nanaimo is no different. It's a great drive that leads you right through the center of the city.</p>
         </section>
       </div>
     </footer>
