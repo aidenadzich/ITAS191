@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Favourite places in Nanaimo - [Firstname Lastname]</title>
+    <style>
+      /**
+       * Try not to mess with this part unless you're familiar with box-sizing.
+       * We will cover these topics in a future class. You can modify this section
+       * if you want to, but feel free to skip to the next part below.
+       */
+      html {
+        box-sizing: border-box;
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
+      /* Play around with the CSS below here and add your own personal style! */
+      body {
+        color: #111;
+      }
+
+      #map {
+        float: left;
+        height: 900px;
+      }
+
+      footer {
+        clear: both;
+      }
+
+      #legend {
+        padding: 10px 15px;
+        float: left;
+      }
+
+      #details section {
+        background: #ccccad;
+        margin-bottom: 20px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        overflow: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>[Firstname]'s favourite places in Nanaimo</h1>
+    </header>
+
+    <main>
+      <div id="map">
+        <img src="nanaimo-map.png" alt="Map of Nanaimo, BC" width="768" height="704" />
+      </div>
+
+      <div id="legend">
+        <h2>Legend</h2>
+        <ol type="A">
+          <li><a href="#nanaimo_river">Nanaimo River</a></li>
+          <li>Add more items here!</li>
+        </ol>
+      </div>
+    </main>
+    <footer>
+      <div id="details">
+        <h2>Details about Places</h2>
+        <section>
+          <h3 id="nanaimo_river">Example: Nanaimo River</h3>
+          <p>Example: I like to go swimming here in the summer but many public accesses are being closed.</p>
+        </section>
+        <section>
+          <h3 id="id_here">Add Another Place Here</h3>
+          <p>This is where you can fill in the description</p>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
