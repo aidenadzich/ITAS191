@@ -13,13 +13,13 @@ header h1 {
     text-align: center;
     background-color: dimgray;
 }
-.main ul {
+.header-menu ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
     background-color:dimgray;
   }
-.main li {
+.header-menu li {
     display: flex;
     list-style: none;
     background: #fc8403;
@@ -75,4 +75,19 @@ header h1 {
     .projects-container {
         flex-direction: column;
     }
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+.contact-container ul {
+    display: flex;
+    flex-direction: column;
+    max-width: 18%;
+    list-style: none;
+    background: #fc8403;
+    border-radius: 5px;
+    padding: 10px;
+
 }
