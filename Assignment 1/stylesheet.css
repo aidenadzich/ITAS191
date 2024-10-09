@@ -1,0 +1,78 @@
+header {
+    background-color:dimgray;
+    font-family: fantasy;
+}
+
+body {
+    background-color:papayawhip;
+    font-family: fantasy;
+
+}
+
+header h1 {
+    text-align: center;
+    background-color: dimgray;
+}
+.main ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color:dimgray;
+  }
+.main li {
+    display: flex;
+    list-style: none;
+    background: #fc8403;
+    flex-direction: row;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+.photo {
+    float:right;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 30px;
+}
+
+.aboutmetextbox {
+    margin-top: 3%;
+    max-width: 65%;
+    background-color: darkorange;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.projectstextbox {
+    max-width: 30%;
+    background-color: darkorange;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.aboutme-container {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.aboutme-container iframe {
+    margin-top: 10px;
+    max-height: 200px;
+    max-width: 85%;
+}
+
+/* Flexbox layout for the Projects section CSS*/
+.projects-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .projects-container {
+        flex-direction: column;
+    }
+}
