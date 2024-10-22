@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <title>Form Lab</title>
+
+</head>
+<body>
+    <h1>Bathtub Race Signup Sheet</h1>
+    <form method="post" action="http://appdev.itas.ca:8080/~sglencross/LAB5/formPost.php">
+    
+            <div>
+
+            <label class="required">Select Event:</label>
+            <input type="radio" name="event" value="stock" id="stock" class="radio">
+            <label for="stock" class="radio">Stock</label>
+            <input type="radio" name="event" value="modified" id="modified" class="radio">
+            <label for="modified" class="radio">Modified</label>
+
+
+                
+            </div>
+
+            <div>
+            <label for="lastname" class="required">Last Name:</label>
+            <input type="text" name="lastname" class="name" id="lastname"/>
+            </div>
+
+            <div>
+            <label for="firstname" class="required">First Name:</label>
+            <input type="text" name="firstname" class="name" id="firstname"/>
+            </div>
+
+            <div>
+            <label for="address" class="required">Address:</label>
+            <input type="text" name="address" class="name" id="address"/>
+            </div>
+
+            <div>
+            <label for="city" class="required">City:</label>
+            <input type="text" name="city" class="name" id="city"/>
+            
+            </div>
+
+            <div>
+            <label for="province" class="required">Province:</label>
+            <select name="province" class="name" id="province">
+                <option>Alberta</option>
+                <option>British Columbia</option>
+                <option>Manitoba</option>
+                <option>New Brunswick</option>
+                <option>Newfoundland & Labrador</option>
+                <option>Nova Scotia</option>
+                <option>Ontario</option>
+                <option>Prince Edward Island</option>
+                <option>Quebec</option>
+                <option>Saskatchewan</option>
+                <option>Northwest Territories</option>
+                <option>Nunavut</option>
+                <option>Yukon</option>
+            </select>
+            </div>
+
+            <div>
+                <label for="country" class="required">Country:</label>
+                <input type="text" name="country" class="name" id="country"/>
+                
+                </div>
+
+                <div>
+                    <label for="postal" class="required">Postal Code:</label>
+                    <input type="text" name="postal" class="name" id="postal"/>
+                    
+                    </div>
+
+                    <div>
+                        <label for="email" class="required">Email:</label>
+                        <input type="text" name="email" class="name" id="email"/>
+                        
+                        </div>
+
+        <div>
+            <label for="dob" class="required">Date of Birth:</label>
+            <input type="date" name="dob" class="name" id="dob"/>
+            </div>
+            <div>
+            <label class="required">Gender:</label>
+            
+                <input type="radio" name="gender" value="male" id="male" class="radio">
+                <label for="male" class="radio">Male</label>
+                <input type="radio" name="gender" value="female" id="female" class="radio">
+                <label for="female" class="radio">Female</label>
+                <input type="radio" name="gender" value="other" id="other" class="radio">
+                <label for="other" class="radio">Other</label>
+
+            
+          
+            </div>
+            <div>
+            <label for="boatname" class="required">Boat Name:</label>
+            <input type="text" name="boatname" class="name" id="boatname"/>
+            </div>
+            <div>
+            <label for="comments">Comments:</label>
+            <textarea rows=3 name="comments" class="name" id="comments">
+            </textarea>
+            </div>
+            <div>
+            <label for="agree" class="required">I agree to the waiver</label>
+            <input type="checkbox" class="agree" name="agree" value="yes" id="agree">
+            </div>
+            <div>
+            <input type="submit"/>
+            <input type="reset"/>
+            </div>
+    </form>
+</body>
+</html>

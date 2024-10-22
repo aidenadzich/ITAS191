@@ -28,6 +28,7 @@ header h1 {
     margin: 20px;
     border-radius: 5px;
     text-align: center;
+    
   }
 
 .photo {
@@ -35,6 +36,8 @@ header h1 {
     margin-left: 5%;
     margin-right: 5%;
     border-radius: 30px;
+    align-self: center;
+
 }
 
 .aboutmetextbox {
@@ -42,8 +45,10 @@ header h1 {
     max-width: 65%;
     background-color: darkorange;
     border-radius: 5px;
-    padding: 10px;
+    padding: 20px;
 }
+
+
 
 .projectstextbox {
     max-width: 30%;
@@ -55,6 +60,7 @@ header h1 {
 .aboutme-container {
     display: flex;
     align-items: flex-start;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 
@@ -90,4 +96,8 @@ header h1 {
     border-radius: 5px;
     padding: 10px;
 
+}
+
+a:hover {
+    color:blue
 }
