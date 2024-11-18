@@ -1,20 +1,19 @@
-/* Reset margins and padding */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  /* Background container that holds all images side-by-side */
   .background-container {
     position: fixed;
     top: 0;
     left: 0;
-    width: 900%; /* 100% for each of the 8 images */
+    width: 900%;
     height: 100vh;
-    display: flex; /* Align images side-by-side */
+    display: flex;
     z-index: -1;
-    animation: scrollBackground 120s linear infinite; /* Adjust duration as needed */
+    animation: scrollBackground 120s linear infinite;
   }
 
   .overlay {
@@ -23,46 +22,47 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
-    z-index: 1; /* Ensure it sits above the background images */
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
   }
   
-  /* Individual image styling */
   .background-image {
-    flex: 0 0 12.5%; /* Each image takes up 1/8th of the container width */
+    flex: 0 0 12.5%;
     height: 100%;
     background-size: cover;
-    background-position: center bottom; /* Adjust to show the lower part of the image */
+    background-position: center bottom;
   }
   
-  /* Animation to scroll the container horizontally */
   @keyframes scrollBackground {
     from {
       transform: translateX(0);
     }
     to {
-      transform: translateX(-100%); /* Move the width of 7 images to loop back */
+      transform: translateX(-100%);
   }
 }
   
-  /* Page content overlay */
   .content {
     position: relative;
     z-index: 1;
-    background-color: transparent; /* Main content is transparent */
+    background-color: transparent;
   }
   
-  /* Optional styling for solid header and navbar */
   .p-5 {
-    background-color: #007bff; /* Example header color */
+    background-color: #007bff;
   }
   
   .navbar {
-    background-color: #343a40; /* Example navbar color */
+    background-color: #343a40;
   }
   
   .transparent-box {
     background-color: rgba(107, 159, 242, 0.9);
     border-radius: 10px;
     padding: 30px;
+  }
+
+  .nav-pills {
+    list-style-type: disc;
+    padding-left: 5%;
   }
