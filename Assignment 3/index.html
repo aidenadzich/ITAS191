@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Vancouver Canucks Fan Page</title>
+
+    <!-- Bootstrap CSS from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS Bundle from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="stylesheet.css">
+
+</head>
+
+<body>
+
+    <div class="p-5 bg-primary text-white text-center" style="background-image: url('images/canucksbanner.jpg'); background-size: cover; background-position-x: 10; background-position: center; color: white;">
+        <div class="bannertext">
+            <h1>Vancouver Canucks</h1>
+            <p><br>Welcome to the unofficial page of the <s>worst</s> best NHL team</p>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-green py-3">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="schedule.html">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tickets.html">Tickets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- News Section -->
+    <section id="news" class="container mt-5">
+        <h2 class="text-center mb-4">Latest News</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <img src="images/canucksvsnash.png" class="card-img-top" alt="News Image 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Canucks Defeat Rivals</h5>
+                        <p class="card-text">Read about the Canucks' thrilling victory in last night's game.</p>
+                        <a href="#" class="btn btn-green">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <img src="images/news2.jpg" class="card-img-top" alt="News Image 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Upcoming Games</h5>
+                        <p class="card-text">Check out the Canucks' schedule for the next few weeks.</p>
+                        <a href="#" class="btn btn-green">See Schedule</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <img src="images/news3.jpg" class="card-img-top" alt="News Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Player Spotlight</h5>
+                        <p class="card-text">Highlighting the top players of the season.</p>
+                        <a href="#" class="btn btn-green">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p class="mb-0">&copy; 2024 Vancouver Canucks Fan Page. All rights reserved.</p>
+        <p>Website created by Aiden Adzich</p>
+    </footer>
+
+</body>
+
+</html>

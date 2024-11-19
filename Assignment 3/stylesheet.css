@@ -1,0 +1,36 @@
+.bannertext {
+
+    background-color: rgba(0,0,0,0.5);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    font-family: 'NHLEVan', sans-serif;
+
+}
+
+@font-face {
+    font-family: NHLEVan;
+    src: url('fonts/NHLEVan.ttf') format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+
+.bg-green {
+    background-color: #00843d;
+}
+
+.btn-green {
+    background-color: #00843d;
+   border-color: #00843d;
+    color: white;
+}
+
+.btn-green:hover {
+    background-color: #007738;
+    border-color: #007738;
+    color: white;
+}
+
+.nhl-font {
+    font-family: 'NHLEVan', sans-serif;
+}
