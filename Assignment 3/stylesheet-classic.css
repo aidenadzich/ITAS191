@@ -1,0 +1,56 @@
+body.classic-theme {
+    background-color: #231f20;
+    color: #FF6D00;
+}
+
+body.classic-theme .bg-main {
+    background-color: #FF6F00;
+}
+
+body.classic-theme .btn-main {
+    background-color: #FF6F00;
+    border-color: #FF6D00;
+}
+
+body.classic-theme .btn-main:hover {
+    background-color: #cf5a00;
+    border-color: #cf5a00;
+}
+
+body.classic-theme .bg-img-banner {
+    background-image: url('images/orange-skate-banner.jpg'); /* Change banner */
+    background-size: cover;
+    background-position: center;
+}
+
+body.classic-theme .card {
+    background-color: #2c2829;
+    color: white;
+    border-color: #292929;
+}
+
+body.classic-theme .main-content-wrapper {
+    background-color: #231f20;
+    color: white;
+}
+
+body.classic-theme .left-bg {
+    background-image: url('images/canucks-vertical-orange-2.jpg');
+}
+
+body.classic-theme .right-bg {
+    background-image: url('images/canucks-vertical-orange-2.jpg');
+    
+}
+
+body.classic-theme .fc-button {
+    background-color: #FF6F00 !important;
+}
+
+body.classic-theme .fc-button:hover {
+    background-color: #cf5a00 !important;
+}
+
+.card.classic-theme {
+    border-color: white;
+}

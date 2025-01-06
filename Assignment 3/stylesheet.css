@@ -1,3 +1,45 @@
+body {
+    transition: background-color 0.5s ease, color 0.5s ease;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.main-content-wrapper {
+    margin: 0 15%;
+    background: white;
+    padding: 20px;
+}
+
+.side-background {
+    position: fixed;
+    top: 0;
+    width: 15%; /* Adjust to control the width of the background */
+    height: 100vh;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+}
+
+.left-bg {
+    left: 0;
+    background-image: url('images/canucks-vertical-right.jpg'); /* Your left side image */
+}
+
+.right-bg {
+    right: 0;
+    background-image: url('images/canucks-vertical-right.jpg'); /* Your right side image */
+}
+
+.bg-img-banner {
+    background-image: url('images/canucksbanner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-position-x: 10;
+    color: white;
+}
+
 .bannertext {
 
     background-color: rgba(0,0,0,0.5);
@@ -5,7 +47,7 @@
     border-radius: 10px;
     display: inline-block;
     font-family: 'NHLEVan', sans-serif;
-
+    
 }
 
 @font-face {
@@ -15,17 +57,17 @@
     font-size: normal;
 }
 
-.bg-green {
+.bg-main {
     background-color: #00843d;
 }
 
-.btn-green {
+.btn-main {
     background-color: #00843d;
-   border-color: #00843d;
+    border-color: #00843d;
     color: white;
 }
 
-.btn-green:hover {
+.btn-main:hover {
     background-color: #007738;
     border-color: #007738;
     color: white;
@@ -33,4 +75,43 @@
 
 .nhl-font {
     font-family: 'NHLEVan', sans-serif;
+}
+
+.bg-foot {
+    background-color: #2c2829;
+}
+
+.van-font {
+    font-family: 'NHLEVan', sans-serif;
+}
+
+#calendar {
+    max-width: 1600px;
+    width: 100%;
+    height: 100%;
+}
+
+.fc-toolbar-title {
+    font-family: NHLEVan;
+}
+
+.fc-button {
+    background-color: #00843d !important;
+}
+
+.fc-button:hover {
+    background-color: #007738 !important;
+}
+
+.form-control {
+    border-color: #2c2829;
+}
+
+#game {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.card {
+    border-color: #2c2829;
 }

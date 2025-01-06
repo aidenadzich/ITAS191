@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="canucksEvents.js"></script>
     <title>Vancouver Canucks Fan Page</title>
 
     <!-- Bootstrap CSS from CDN -->
@@ -14,29 +13,14 @@
     <!-- Bootstrap JS Bundle from CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Full Calendar CSS -->
-    <link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.5/index.global.min.css' rel='stylesheet' />
-
-    <!-- Full Calendar JS Bundle -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.5/index.global.min.js'></script>
-
     <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="stylesheet-classic.css">
-
 
     <link rel="icon" href="favicon.ico">
+
 </head>
 
 <body>
-    <!-- Left Side Background -->
-    <div class="side-background left-bg"></div>
 
-    <!-- Right Side Background -->
-    <div class="side-background right-bg"></div>
-
-    <!-- Main Content Wrapper -->
-    
-    <!-- Hero Section -->
     <div class="p-5 bg-primary text-white text-center bg-img-banner">
         <div class="bannertext">
             <h1>Vancouver Canucks</h1>
@@ -47,19 +31,20 @@
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-main py-3">
         <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link active" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="news.html">News</a>
+                        <a class="nav-link" href="about.html">News</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="schedule.html">Schedule</a>
+                        <a class="nav-link" href="schedule.html">Schedule</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="tickets.html">Tickets</a>
@@ -68,56 +53,66 @@
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
-                <div class="form-check form-switch">
+                <div class="form-check form-switch ms-auto">
                     <input class="form-check-input" type="checkbox" id="themeSwitch">
                     <label class="form-check-label text-white" for="themeSwitch">Classic Theme</label>
                 </div>
             </div>
         </div>
     </nav>
-    <div class="main-content-wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col d-flex justify-content-center">
-                    <div id="calendar"></div>
+
+    <!-- News Section -->
+    <section id="news" class="container mt-5">
+        <h2 class="text-center mb-4">Latest News</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <img src="images/canucksvsnash.png" class="card-img-top" alt="News Image 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Canucks Defeat Rivals</h5>
+                        <p class="card-text">Read about the Canucks' thrilling victory in last night's game.</p>
+                        <a href="#" class="btn btn-main">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <img src="images/calendar.jpg" class="card-img-top" alt="News Image 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Upcoming Games</h5>
+                        <p class="card-text">Check out the Canucks' schedule for the next few weeks.</p>
+                        <a href="#" class="btn btn-main">See Schedule</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <img src="images/hughes3.jpg" class="card-img-top" alt="News Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Player Spotlight</h5>
+                        <p class="card-text">Introducing the Canucks' star player: Quinn Hughes</p>
+                        <a href="#" class="btn btn-main">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <img src="images/boeser.jpg" class="card-img-top" alt="News Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Boeser Out Indefinitely</h5>
+                        <p class="card-text">Will Brock Boeser be out for the season due to?</p>
+                        <a href="#" class="btn btn-main">Learn More</a>
+                    </div>
                 </div>
             </div>
         </div>
-       
-    </div>
-    <div class="mt-5 p-4 bg-foot text-white text-center">
+    </section>
+
+    <!-- Footer -->
+    <div class="mt-5 p-4 bg-dark text-white text-center">
         <p class="mb-0">&copy; 2024 Vancouver Canucks Fan Page. All rights reserved.</p>
         <p>Website created by Aiden Adzich</p>
-    </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var calendarEl = document.getElementById('calendar');
-            var calendar = new FullCalendar.Calendar(calendarEl, {
-                initialView: 'dayGridMonth',
-                headerToolbar: {
-                    left: 'prev,next',
-                    center: 'title',
-                    right: 'today'
-                },
-                themeSystem: 'bootstrap',
-                events: canucksEvents
-            });
-
-            calendar.render();
-
-            // Populate game options from FullCalendar events
-            const gameSelect = document.getElementById("game"); // Target the <select> dropdown
-            const events = calendar.getEvents(); // Retrieve all events from FullCalendar
-
-            events.forEach(event => {
-                const option = document.createElement("option");
-                option.value = `${event.title} - ${event.start.toISOString().split("T")[0]}`;
-                option.textContent = `${event.title} (${event.start.toISOString().split("T")[0]})`;
-                gameSelect.appendChild(option);
-            });
-        });
-    </script>    
+      </div>
 
 </body>
 
