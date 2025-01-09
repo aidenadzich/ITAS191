@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="stylesheet-classic.css">
 
-    <script src="canucksEvents.js"></script>
-    <script src="dropdownHandler.js" defer></script>
+    <script src="js/canucksEvents.js"></script>
+    <script src="js/dropdownHandler.js" defer></script>
 
     <link rel="icon" href="favicon.ico">
 </head>
@@ -134,52 +134,7 @@
 
 </body>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const themeSwitch = document.getElementById('themeSwitch');
-        const body = document.body;
-
-        // Check for stored theme preference
-        if (localStorage.getItem('theme') === 'classic') {
-            body.classList.add('classic-theme');
-            themeSwitch.checked = true;
-        }
-
-        // Toggle the theme with fade effect
-        themeSwitch.addEventListener('change', function () {
-            // Fade out transition
-            body.style.transition = 'opacity 0.5s';
-            body.style.opacity = 0;
-
-            setTimeout(() => {
-                // Switch theme
-                if (themeSwitch.checked) {
-                    body.classList.add('classic-theme');
-                    localStorage.setItem('theme', 'classic');
-                } else {
-                    body.classList.remove('classic-theme');
-                    localStorage.setItem('theme', 'default');
-                }
-
-                // Fade back in
-                body.style.opacity = 1;
-            }, 500);
-        });
-    });
-</script>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-    const gameSelect = document.getElementById('game');
-    
-    // Populate the dropdown with events
-    canucksEvents.forEach(event => {
-        const option = document.createElement('option');
-        option.value = `${event.title} - ${event.start}`;
-        option.textContent = `${event.title} (${event.start})`;
-        gameSelect.appendChild(option);
-    });
-});
-</script>
+<script src="js/themeSwitch.js"></script>
+<script src="js/dropdownPopulate.js"></script>
 
 </html>
