@@ -1,0 +1,4 @@
+
+
+docker run -d --rm -p 9001:80 -v ${PWD}:/var/www/html --name php84_apache_itas191_container php84-itas191-apache
+
